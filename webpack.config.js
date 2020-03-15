@@ -1,25 +1,25 @@
 module.exports = {
-  mode: "development",
-  entry: "./src/index.tsx",
+  mode: 'development',
+  entry: './src/index.tsx',
   output: {
-    filename: "bundle.js"
+    filename: 'bundle.js'
   },
   devServer: {
-    contentBase: "./public",
+    contentBase: './public',
     compress: true,
     hot: true,
-    host: "localhost",
+    host: 'localhost',
     port: 3000,
-    publicPath: "/"
+    publicPath: '/'
   },
   resolve: {
-    extensions: [".ts", ".tsx", ".js"]
+    extensions: ['.ts', '.tsx', '.js']
   },
   module: {
     rules: [
       {
         test: /\.tsx?$/,
-        use: [{ loader: "ts-loader" }]
+        use: [{ loader: 'ts-loader' }]
       }
     ]
   }
